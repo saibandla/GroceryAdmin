@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<categories>
+	<category name="Vegetables">
+		<item name="Asparagus"/>
+		<item name="Beets"/>
+		<item name="Broccoli"/>
+		<item name="Carrots"/>
+		<item name="Celery"/>
+		<item name="Corn"/>
+		<item name="Cucumbers"/>
+		<item name="Lettuce"/>
+		<item name="Mushrooms"/>
+		<item name="Onions"/>
+		<item name="Peppers"/>
+		<item name="Potatoes"/>
+		<item name="Spinach"/>
+		<item name="Sprouts"/>
+		<item name="Tomatoes"/>
+	</category>
+	<category name="Fruit">
+		<item name="Apples"/>
+		<item name="Bananas"/>
+		<item name="Berries"/>
+		<item name="Cherries"/>
+		<item name="Grapes"/>
+		<item name="Kiwis"/>
+		<item name="Lemons"/>
+		<item name="Limes"/>
+		<item name="Melons"/>
+		<item name="Oranges"/>
+		<item name="Peaches"/>
+		<item name="Pears"/>
+	</category>
+	<category name="Sauces">
+		<item name="BBQ sauce"/>
+		<item name="Cocktail sauce"/>
+		<item name="Fish sauce"/>
+		<item name="Ketchup"/>
+		<item name="Mayonnaise"/>
+		<item name="Mustard"/>
+		<item name="Salsa"/>
+		<item name="Soy sauce"/>
+		<item name="Sweet chilli sauce"/>
+		<item name="Tabasco"/>
+		<item name="Worcestershire sauce"/>
+	</category>
+	<category name="Miscellaneous">
+		<item name="Bottled water"/>
+		<item name="Bouillon cubes"/>
+		<item name="Cereal"/>
+		<item name="Coffee"/>
+		<item name="Gravy"/>
+		<item name="Lemon juice"/>
+		<item name="Lime juice"/>
+		<item name="Pasta"/>
+		<item name="Tea"/>
+		<item name="Rice"/>
+	</category>
+	<category name="Spreads">
+		<item name="Chocolate sprinkles"/>
+		<item name="Honey"/>
+		<item name="Marmelade"/>
+		<item name="Jam"/>
+		<item name="Jelly"/>
+		<item name="Peanut butter"/>
+	</category>
+	<category name="Spices &amp; herbs">
+		<item name="Basil"/>
+		<item name="Black pepper"/>
+		<item name="Cinnamon"/>
+		<item name="Garlic"/>
+		<item name="Oregano"/>
+		<item name="Parsley"/>
+		<item name="Thyme"/>
+		<item name="Red pepper"/>
+		<item name="Salt"/>
+	</category>
+	<category name="Oils &amp; Vinegars">
+		<item name="Balsamic vinegar"/>
+		<item name="Salad dressing"/>
+		<item name="Olive oil"/>
+		<item name="Vegetable oil"/>
+		<item name="Vinegar"/>
+	</category>
+	<category name="Dairy">
+		<item name="Butter"/>
+		<item name="Cheddar"/>
+		<item name="Cheese"/>
+		<item name="Cottage cheese"/>
+		<item name="Eggs"/>
+		<item name="Margarine"/>
+		<item name="Milk"/>
+		<item name="Parmesan cheese"/>
+		<item name="Sour cream"/>
+		<item name="Whipped cream"/>
+		<item name="Yogurt"/>
+	</category>
+	<category name="Frozen">
+		<item name="Fish sticks"/>
+		<item name="Ice cream"/>
+		<item name="Pizzas"/>
+		<item name="Popsicles"/>
+		<item name="Fries "/>
+		<item name="Microwave dinners"/>
+	</category>
+	<category name="Meat">
+		<item name="Bacon"/>
+		<item name="Beef"/>
+		<item name="Chicken"/>
+		<item name="Ground beef"/>
+		<item name="Ham"/>
+		<item name="Hot dogs"/>
+		<item name="Pork"/>
+		<item name="Sausage"/>
+		<item name="Steak"/>
+		<item name="Turkey"/>
+	</category>
+	<category name="Seafood">
+		<item name="Crab"/>
+		<item name="Halibut"/>
+		<item name="Oysters"/>
+		<item name="Salmon"/>
+		<item name="Shrimp"/>
+		<item name="Tilapia"/>
+		<item name="Tuna"/>
+	</category>
+	<category name="Baked goods">
+		<item name="Bagels"/>
+		<item name="Buns"/>
+		<item name="Cake"/>
+		<item name="Crackers"/>
+		<item name="Croissants"/>
+		<item name="Bread"/>
+		<item name="Pastries"/>
+		<item name="Pie"/>
+		<item name="Pitas"/>
+		<item name="Rolls"/>
+	</category>
+	<category name="Baking">
+		<item name="Baking soda"/>
+		<item name="Bread crumbs"/>
+		<item name="Brown sugar"/>
+		<item name="Cake decorations"/>
+		<item name="Cake icing"/>
+		<item name="Cake mix"/>
+		<item name="Chocolate chips"/>
+		<item name="Cocoa"/>
+		<item name="Flour"/>
+		<item name="Oatmeal"/>
+		<item name="Pancake mix"/>
+		<item name="Powdered sugar"/>
+		<item name="Sugar"/>
+		<item name="Yeast"/>
+	</category>
+	<category name="Snacks">
+		<item name="Candy"/>
+		<item name="Cookies"/>
+		<item name="Dried fruit"/>
+		<item name="Granola bars"/>
+		<item name="Chewing gum"/>
+		<item name="Nuts"/>
+		<item name="Popcorn"/>
+		<item name="Potato chips"/>
+		<item name="Pudding"/>
+		<item name="Pretzels"/>
+		<item name="Tortilla chips"/>
+	</category>
+	<category name="Personal care">
+		<item name="Bath soap"/>
+		<item name="Conditioner"/>
+		<item name="Condoms"/>
+		<item name="Cosmetics"/>
+		<item name="Deodorant"/>
+		<item name="Facial cleanser"/>
+		<item name="Facial tissue"/>
+		<item name="Floss"/>
+		<item name="Hair gel"/>
+		<item name="Hair spray"/>
+		<item name="Hand soap"/>
+		<item name="Lip balm"/>
+		<item name="Moisturizing lotion"/>
+		<item name="Mouthwash"/>
+		<item name="Q-Tips"/>
+		<item name="Razors"/>
+		<item name="Shampoo"/>
+		<item name="Shaving cream"/>
+		<item name="Toilet paper"/>
+		<item name="Toothpaste"/>
+		<item name="Tooth brush"/>
+	</category>
+	<category name="Kitchen">
+		<item name="Aluminum foil"/>
+		<item name="Coffee filters"/>
+		<item name="Freezer bags"/>
+		<item name="Napkins"/>
+		<item name="Plastic wrap"/>
+		<item name="Sandwich bags"/>
+		<item name="Wax paper"/>
+	</category>
+	<category name="Cleaning products">
+		<item name="Air freshener"/>
+		<item name="Bathroom cleaner"/>
+		<item name="Bleach"/>
+		<item name="Dishwasher tablets"/>
+		<item name="Fabric softener"/>
+		<item name="Floor cleaner"/>
+		<item name="Garbage bags"/>
+		<item name="Glass cleaner"/>
+		<item name="Laundry detergent"/>
+		<item name="Paper towels"/>
+		<item name="Sponges"/>
+		<item name="Vacuum bags"/>
+	</category>
+	<category name="Alcohol">
+		<item name="Beer"/>
+		<item name="Red wine"/>
+		<item name="Rose wine"/>
+		<item name="White wine"/>
+	</category>
+</categories>	

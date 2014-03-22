@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_item_title">Create item</string>
+    <string name="send">Send list</string>
+    <string name="empty_list_not_sent">Empty list not sent.</string>
+    
+    <string name="edit_item_title">Edit item</string>
+    <string name="maintenance_title">Database maintenance</string>
+    <string name="app_name">Grocery List Admin</string>
+    <string name="version">1.0.2</string>
+    <string name="name_label">Name</string>
+    <string name="category_label">Category</string>
+    <string name="create_label">Ok</string>
+    <string name="edit_categories_label">Edit categories</string>
+    <string name="delete_all_label">Delete all</string>
+    <string name="restore_default_label">Restore default database</string>
+    <string name="edit_categories_title">Edit categories</string>
+    <string name="add_category_label">Add category</string>          
+    <string name="create_category_title">Create Category</string>
+    <string name="delete_item_item">Delete Item</string>
+    <string name="edit_item_item">Edit Item</string>
+    <string name="amount_label">Amount</string>                    
+    <string name="unit_label">Unit</string>
+    <string name="add_to_list_label">Add to list</string>
+    <string name="add_to_list_title">Add to list</string>
+    <string name="remove_from_list_label">Remove from list</string>
+    <string name="all_categories_label">All categories</string>
+    <string name="edit_mode_label">Edit list</string>
+    <string name="shopping_mode_label">Shopping</string>
+    <string name="maintenance_label">Maintenance</string>
+    <string name="about_label">About</string>
+    <string name="confirm_category_delete_text">Are you sure you want delete this category, and all items that belong to it?</string>
+    <string name="confirm_delete_all_text">Are you sure you want to erase the entire database? All items and categories will be lost.</string>
+    <string name="confirm_restore_default_text">Are you sure you to restore the default database? All your changes will be lost.</string>
+    <string name="alert_no_categories_text">An item must belong to a category. Please create a category first.</string>
+    <string name="ok_label">Ok</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="delete_category_item">Delete category</string>
+    <string name="edit_category_item">Edit category</string>
+    <string name="edit_category_title">Edit category</string>
+    <string name="number_items_label">Number of items:</string>
+    <string name="number_categories_label">Number of categories:</string>
+    <string name="restore_default_progress_label">Restoring default items and categories</string>
+    <string name="restore_default_title">Please wait</string>
+    <string name="confirm_check_title">Check off</string>
+    <string name="confirm_check_label">Do you want to check off</string>
+    <string name="performcheck_label">Always ask this question</string>
+    <string name="performcheck_long_label">Ask before checking off item</string>
+     
+    <string name="title">Login Page</string>
+	<string name="txtUname">Username</string>
+	<string name="txtPassword">Password</string>
+	<string name="buttonLogin">Login</string>
+	<string name="buttonSignUp">New User?</string>
+	<string name="newuser">New User Page</string>
+	<string name="email">Email ID</string>
+	<string name="address">Address</string>
+	<string name="buttonRegister">Register</string>
+	<string name="buttonCancel">Cancel</string>
+	<string name="loggedin">User Logged In</string>
+	<string name="buttonShowAll">All Users</string>
+<string name="adminTitle">Admin Login</string>
+<string name="userdashbrd">Welcome</string>
+<string name="changeInfo">Change PassWord</string>
+</resources>

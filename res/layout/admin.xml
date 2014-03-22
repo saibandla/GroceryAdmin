@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/unnamed"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/mythem"
+        android:text="@string/adminTitle" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.6" 
+        android:paddingTop="50sp">
+
+       
+
+        <TableRow android:id="@+id/row2" >
+
+            <TextView
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/txtPassword"
+                android:textColor="#000000" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/editPassword"
+                style="@android:style/Widget.EditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:password="true"
+                android:textColor="#000000" >
+            </EditText>
+        </TableRow>
+
+        <TableRow android:id="@+id/row3" 
+            android:paddingTop="15sp">
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/buttonLogin" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/buttonCancel" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/buttonchangepass"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change button"
+            android:visibility="invisible" />
+    </TableLayout>
+
+</LinearLayout>

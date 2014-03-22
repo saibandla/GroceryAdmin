@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TableLayout
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:stretchColumns="2">
+   <TableRow>
+    
+    <TextView
+        android:id="@+id/textSmsFrom"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="From" />
+    
+    
+     <TextView
+        android:id="@+id/textSmsDate"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="date" />
+ 
+    <TextView
+        android:id="@+id/textSmsBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="70dp"
+        android:gravity="right"
+        android:text="Body" />
+  </TableRow>
+ </TableLayout>
+ <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:height="2dip"
+        android:text="" />
+ </LinearLayout>
+ 
+
+

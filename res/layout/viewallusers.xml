@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Customers Detail"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+    </TextView>
+    <!-- style="@style/heading" -->
+
+    <TableLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15sp"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="User Name"
+                android:textColor="#ff0000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="Phone No"
+                android:textColor="#ff0000"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="Address"
+                android:textColor="#ff0000"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/listUsersInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/myblue"
+        android:dividerHeight="4sp"
+        android:paddingTop="10sp" />
+
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sorry! No Customers Found!"
+        android:visibility="invisible" />
+    <!-- style="@style/error" -->
+
+</LinearLayout>

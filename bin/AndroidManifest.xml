@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.schuemie.GroceryList"
+    android:versionCode="1"
+    android:versionName="1.0.2" >
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault.Light" >
+        <provider
+            android:name="GroceryListContentProvider"
+            android:authorities="net.schuemie.GroceryList" />
+
+        <activity android:name="net.schuemie.GroceryList.SmsAlertDialogActivity" >
+        </activity>
+        <activity
+            android:name="GroceryHome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/net.schuemie.groceryitem" />
+            </intent-filter>
+        </activity>
+        <activity android:name="GroceryList" >
+        </activity>
+        <activity
+            android:name="net.schuemie.GroceryList.CreateItem"
+            android:label="@string/create_item_title"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/net.schuemie.groceryitem" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/net.schuemie.groceryitem" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.schuemie.GroceryList.EditCategories"
+            android:label="@string/edit_categories_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/net.schuemie.grocerycategory" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.schuemie.GroceryList.CreateCategory"
+            android:label="@string/create_category_title"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/net.schuemie.grocerycategory" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/net.schuemie.grocerycategory" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SngleSms"></activity>
+        <activity
+            android:name="net.schuemie.GroceryList.AddToList"
+            android:label="@string/add_to_list_title"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="net.schuemie.GroceryList.action.MODIFY_ITEM_STATUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/net.schuemie.groceryitem" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.schuemie.GroceryList.ConfirmCheck"
+            android:label="@string/confirm_check_title"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="net.schuemie.GroceryList.action.CHECK_ITEM_OFF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/net.schuemie.groceryitem" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.schuemie.GroceryList.Maintenance"
+            android:label="@string/maintenance_title" >
+            <intent-filter>
+                <action android:name="net.schuemie.GroceryList.action.MAINTENANCE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.schuemie.GroceryList.RestoreDefaultDatabase"
+            android:label="@string/restore_default_title"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="net.schuemie.GroceryList.action.RESTORE_DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="net.schuemie.GroceryList.ViewAll" >
+        </activity>
+        <activity android:name="net.schuemie.GroceryList.NewUserActivity" >
+        </activity>
+        <activity android:name="net.schuemie.GroceryList.UserLoggedInPage" >
+        </activity>
+        <activity android:name="net.schuemie.GroceryList.AdminPage" >
+        </activity>
+        <activity android:name="net.schuemie.GroceryList.DatabaseActivity" >
+        </activity>
+        <activity android:name=".SplashScreen" >
+        </activity>
+        <activity android:name="net.schuemie.GroceryList.SMS" >
+        </activity>
+
+        <receiver android:name=".SmsReceiver" >
+            <intent-filter android:label="High" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ViewSMS" >
+        </activity>
+        <activity android:name="net.schuemie.GroceryList.SmsRead" >
+        </activity>
+        <activity android:name="net.schuemie.GroceryList.ListConverter" >
+        </activity>
+        <activity android:name="net.schuemie.GroceryList.ChangePassword" >
+        </activity>
+        <activity android:name="net.schuemie.GroceryList.SMSdup" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+    
+    
+    <Spinner android:id="@+id/category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+    />
+    
+    <!-- The frame layout is here since we will be showing either
+    the empty view or the list view.  -->
+    <FrameLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+        <!-- Here is the list. Since we are using a ListActivity, we
+             have to call it "@android:id/list" so ListActivity will
+             find it -->
+        <ListView android:id="@android:id/list"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" android:scrollbarStyle="outsideInset"/>        
+        <!-- Here is the view to show if the list is emtpy -->
+        <TextView android:id="@+id/empty"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:text="No items" android:fitsSystemWindows="true"/>
+            
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/smslay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/sendbtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Cart List Via SMS" />
+
+    </LinearLayout>
+    
+        <LinearLayout
+            android:id="@+id/searchpanel"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:selectAllOnFocus="true"
+            android:singleLine="true" />
+
+        <Button android:id="@+id/clear"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"/>            
+        <Button android:id="@+id/create"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+        
+</LinearLayout>

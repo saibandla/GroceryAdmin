@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/mythem"
+        android:text="@string/userdashbrd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/btnInbox"
+            android:layout_width="0dp"
+            android:layout_height="100sp"
+            android:layout_marginLeft="18sp"
+            android:layout_marginRight="9sp"
+            android:layout_marginTop="30sp"
+            android:layout_weight="0.5"
+            android:background="@drawable/buttonshape"
+            android:onClick="showInbox"
+            android:scaleType="fitXY"
+            android:src="@drawable/lettericon" />
+
+        <ImageButton
+            android:id="@+id/btnShowAllUsers"
+            android:layout_width="0dp"
+            android:layout_height="100sp"
+            android:layout_marginLeft="9sp"
+            android:layout_marginRight="18sp"
+            android:layout_marginTop="30sp"
+            android:layout_weight="0.5"
+            android:background="@drawable/buttonshape"
+            android:onClick="listSAllUsers"
+            android:scaleType="fitXY"
+            android:src="@drawable/listall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/btnAddCategory"
+            android:layout_width="0dp"
+            android:layout_height="100sp"
+            android:layout_marginLeft="18sp"
+            android:layout_marginRight="9sp"
+            android:layout_marginTop="20sp"
+            android:layout_weight="0.5"
+            android:background="@drawable/buttonshape"
+            android:onClick="addCategory"
+            android:scaleType="fitXY"
+            android:src="@drawable/addcategory" />
+
+        <ImageButton
+            android:id="@+id/btnAddItem"
+            android:layout_width="0dp"
+            android:layout_height="100sp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="18sp"
+            android:layout_marginTop="20sp"
+            android:layout_weight="0.5"
+            android:background="@drawable/buttonshape"
+            android:onClick="addItem"
+            android:scaleType="fitXY"
+            android:src="@drawable/additem" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:layout_weight="1"
+        android:padding="10sp" >
+
+        <Button
+            android:id="@+id/updateInfo"
+            style="@style/mythemora"
+            android:background="@drawable/buttonshape"
+            android:onClick="changePassword"
+            android:paddingTop="10sp"
+            android:shadowColor="@color/myblue"
+            android:shadowRadius="24"
+            android:text="@string/changeInfo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150sp" />
+    </LinearLayout>
+
+</LinearLayout>
